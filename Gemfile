@@ -18,6 +18,7 @@ gem 'traceroute'
 gem 'rubocop', '~> 0.66.0', require: false
 gem 'rails_best_practices', '~> 1.15', '>= 1.15.7'
 gem 'simplecov', require: false, group: :test
+gem 'simplecov-console', '~> 0.4.1'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
