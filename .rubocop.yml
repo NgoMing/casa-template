@@ -1,0 +1,16 @@
+inherit_from: .rubocop_todo.yml
+
+Rails:
+  Enabled: true
+
+AllCops:
+  Exclude:
+    - db/schema.rb
+    - db/migrate/**/*
+    - lib/tasks/**/*
+    - config/**/*
+
+Metrics/LineLength:
+  Max: 120
+  Exclude:
+    - spec/**/*
