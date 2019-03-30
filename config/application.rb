@@ -16,5 +16,7 @@ module Myapp
       generate.routing_specs false
       generate.controller_specs false
     end
+
+    Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
   end
 end

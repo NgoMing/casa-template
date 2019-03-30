@@ -13,6 +13,7 @@
 
 ## Running the tests
 * `bundle exec rspec`
+* `rails parallel_test`: for rspec parallel tests
 
 ### End to end tests
 
@@ -20,6 +21,7 @@
 * `rubocop -a`
 * `rails traceroute`
 * `rails_best_practices`
+* `rails clean_code`: all of them
 
 ## Deployment
 
@@ -31,6 +33,7 @@
   + Support fixtures: `gem 'factory_bot_rails', '~> 4.0'`
   + Support match methods: `gem 'shoulda-matchers', '~> 3.1'`
   + Clean database: `gem 'database_cleaner'`
+  + Parallel tests: `gem 'parallel_tests'`
 * commands:
   + Generate rspec folders: `rails g rspec:install`
   + Run test: `bundle exec rspec` (link to specific testing file)
