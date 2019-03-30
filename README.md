@@ -1,8 +1,29 @@
-# Casa ouput contract application
+# Application development
 
+## Getting Started
 
-## Additional gem
+### Prequisites
+* Ruby:
+  + Version: 2.5.3
+* Ruby on Rails:
+  + Version: 5.2.3
 
+### Installing
+* `bundle install`
+
+## Running the tests
+* `bundle exec rspec`
+
+### End to end tests
+
+### Coding style tests
+* `rubocop -a`
+* `rails traceroute`
+* `rails_best_practices`
+
+## Deployment
+
+## Gems
 ### Testing
 * gem:
   + Create fake data: `gem 'faker'`
@@ -13,14 +34,6 @@
 * commands:
   + Generate rspec folders: `rails g rspec:install`
   + Run test: `bundle exec rspec` (link to specific testing file)
-
-### UI framework
-* gem:
-  + Font awesome lib: `gem "font-awesome-rails"`
-  + JQuery lib: `gem 'jquery-rails'`
-  + AdminLTE framework: `gem 'adminlte2-rails'`
-* commands:
-  + Generate adminlte layout: `rails g admin_lte2`
 
 ### Clean code
 #### Coding convention
@@ -42,38 +55,11 @@
 * command:
   + Run: `rails_best_practices`
 
-#### Cleaning code package
+#### Code coverage
 * gem:
-  + `gem "rubycritic", require: false`
-* command:
-  + Run: `rubycritic`
+  + `gem 'simplecov', require: false, group: :test`
 
-## Development guide
-### Set up project
-* Create project
-`rails new casa-api`
-
-
-### Fundamental command lines
-* Create new project
-`rails new PROJECT_NAME`
-
-* Install gem dependencies in Gemfile
-`bundle install`
-
-* Create new controller 
-`rails generate controller ControllerName`
-
-* Generate config of code convention automatically
-`rubocop --auto-gen-config`
-
-* Auto fix code convention
-`rubocop -a`
-
-* Generate Spec directory for testing by Rspec gem
-`rails generate rspec:install`
-
-### Issues Solutions
+## Issues solutions
 * Fix: sqlite3
 `gem 'sqlite3', git: 'https://github.com/larskanis/sqlite3-ruby', branch: 'add-gemspec'`
 
