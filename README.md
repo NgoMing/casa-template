@@ -31,8 +31,10 @@
 `rails g scaffold ClauseMaster`
 * Declare attributes for ClauseMaster model in db/migrate
 * Test validate model
-* Declare validation in app/models/clause_master.rb to pass the tests
-
+* Declare validation in app/models/clause_master.rb to pass the tests:
+`rails parallel_test`
+* Clean code:
+`rails clean_code`
 
 ## Gems
 ### Testing

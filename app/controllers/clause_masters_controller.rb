@@ -9,8 +9,7 @@ class ClauseMastersController < ApplicationController
 
   # GET /clause_masters/1
   # GET /clause_masters/1.json
-  def show
-  end
+  def show; end
 
   # GET /clause_masters/new
   def new
@@ -18,8 +17,7 @@ class ClauseMastersController < ApplicationController
   end
 
   # GET /clause_masters/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /clause_masters
   # POST /clause_masters.json
@@ -62,13 +60,14 @@ class ClauseMastersController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_clause_master
-      @clause_master = ClauseMaster.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def clause_master_params
-      params.fetch(:clause_master, {})
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_clause_master
+    @clause_master = ClauseMaster.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def clause_master_params
+    params.fetch(:clause_master, {})
+  end
 end

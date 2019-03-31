@@ -1,4 +1,3 @@
 class ClauseMaster < ApplicationRecord
-
-  validates_presence_of :name, :content, :note
+  validates :name, :content, :note, presence: true
 end
