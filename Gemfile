@@ -8,6 +8,10 @@ gem 'bootstrap-sass', '~> 3.3.7'
 gem 'font-awesome-rails'
 gem 'sass-rails', '~> 5.0'
 
+gem 'will_paginate', '3.1.5'
+# gem 'bootstrap-will_paginate', '0.0.10'
+gem 'breadcrumbs_on_rails'
+
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0'
 gem 'duktape'

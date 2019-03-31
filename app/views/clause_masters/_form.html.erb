@@ -11,7 +11,29 @@
     </div>
   <% end %>
 
+  <div class="field">
+    <%= form.label :clauseID %><br />
+    <%= form.text_field :id, disabled: true %>
+  </div>
+
+  <div class="field">
+    <%= form.label :clause_name %><br />
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :content %><br />
+    <%= form.text_field :content %>
+  </div>
+
+  <div class="field">
+    <%= form.label :note %><br />
+    <%= form.text_field :note %>
+  </div>
+
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "History", name: "history" %>
+    <%= form.submit "Save" %>
+    <%= form.submit "Cancel", name: "cancel" %>
   </div>
 <% end %>

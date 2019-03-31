@@ -5,3 +5,13 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+ClauseMaster.delete_all
+
+20.times do
+  ClauseMaster.create!(
+    name: Faker::Lorem.sentence(5),
+    content: Faker::Lorem.paragraph(10),
+    note: Faker::Lorem.sentence(2),
+    status: nil
+  )
+end

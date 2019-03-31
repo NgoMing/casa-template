@@ -2350,3 +2350,1874 @@ Migrating to CreateClauseMasters (20190331033158)
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2019-03-31 19:31:46 +1000
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_topnavbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 1218ms (Views: 1199.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clause_masters" for ::1 at 2019-03-31 19:31:52 +1000
+  
+ActionController::RoutingError (undefined local variable or method `breadcrumbs' for ClauseMastersController:Class):
+  
+app/controllers/clause_masters_controller.rb:3:in `<class:ClauseMastersController>'
+app/controllers/clause_masters_controller.rb:1:in `<top (required)>'
+Started GET "/" for ::1 at 2019-03-31 19:33:19 +1000
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_topnavbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 345ms (Views: 325.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clause_masters" for ::1 at 2019-03-31 19:33:23 +1000
+  
+ActionController::RoutingError (undefined local variable or method `clause_masters_path' for ClauseMastersController:Class
+Did you mean?  class_variable_set):
+  
+app/controllers/clause_masters_controller.rb:3:in `<class:ClauseMastersController>'
+app/controllers/clause_masters_controller.rb:1:in `<top (required)>'
+Started POST "/__web_console/repl_sessions/4d45cdaff05954fdc47bacc4aa818d4f/trace" for ::1 at 2019-03-31 19:33:58 +1000
+Started GET "/clause_masters" for ::1 at 2019-03-31 19:34:26 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  Rendered clause_masters/index.html.erb within layouts/application (19.1ms)
+Completed 500 Internal Server Error in 104ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The @clause_masters variable appears to be empty. Did you forget to pass the collection object for will_paginate?):
+    1: <p id="notice"><%= notice %></p>
+    2: 
+    3: <% link_to "Add new", new_clause_master_path %>
+    4: <%= will_paginate %>
+    5: 
+    6: <table>
+    7:   <thead>
+  
+app/views/clause_masters/index.html.erb:4:in `_app_views_clause_masters_index_html_erb__983722278_90197620'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mClauseMaster Destroy (80.7ms)[0m  [1m[31mDELETE FROM "clause_masters"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClauseMaster Create (0.9ms)[0m  [1m[32mINSERT INTO "clause_masters" ("name", "content", "note", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Error iusto quo recusandae cum."], ["content", "Magnam magni nihil. Dolorem a sit. Consequatur voluptates officiis. Qui qui fugiat. Omnis iusto aut. Eveniet fugiat nostrum. Consequatur at rem. Quidem dolorem voluptatum. Quibusdam dolorem amet. Ea omnis a."], ["note", "Sunt autem."], ["created_at", "2019-03-31 09:37:19.358769"], ["updated_at", "2019-03-31 09:37:19.358769"]]
+  [1m[35m (80.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClauseMaster Create (1.9ms)[0m  [1m[32mINSERT INTO "clause_masters" ("name", "content", "note", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Itaque explicabo excepturi harum inventore."], ["content", "Et cum iusto. Quia dolore quod. Eveniet doloribus porro. Deserunt saepe blanditiis. Non commodi eaque. Dolorem corrupti eum. Odit molestias nam. Velit corporis alias. Accusamus ducimus a. Ducimus mollitia eum."], ["note", "Doloribus officia."], ["created_at", "2019-03-31 09:37:19.444037"], ["updated_at", "2019-03-31 09:37:19.444037"]]
+  [1m[35m (68.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClauseMaster Create (2.0ms)[0m  [1m[32mINSERT INTO "clause_masters" ("name", "content", "note", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Totam enim est illum explicabo."], ["content", "Ut dolorum voluptatum. Iste quam sed. Enim natus ut. Molestias doloremque hic. Omnis cum voluptatem. Tempora fuga recusandae. Aut provident omnis. Perspiciatis voluptatem dolores. Et voluptatem corrupti. Ipsam itaque velit."], ["note", "Facere blanditiis."], ["created_at", "2019-03-31 09:37:19.519012"], ["updated_at", "2019-03-31 09:37:19.519012"]]
+  [1m[35m (59.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClauseMaster Create (2.2ms)[0m  [1m[32mINSERT INTO "clause_masters" ("name", "content", "note", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Aut eum aspernatur nihil quidem."], ["content", "Repudiandae est qui. Quia minus doloribus. Omnis minima vel. Dignissimos minus qui. Omnis dolorum illo. Explicabo consequatur delectus. A voluptatem labore. Ut velit ut. Omnis saepe sint. Soluta magnam veniam."], ["note", "Debitis ex."], ["created_at", "2019-03-31 09:37:19.585694"], ["updated_at", "2019-03-31 09:37:19.585694"]]
+  [1m[35m (68.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClauseMaster Create (1.9ms)[0m  [1m[32mINSERT INTO "clause_masters" ("name", "content", "note", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Et quis placeat ipsam est."], ["content", "Consectetur possimus at. Aliquam itaque dolore. Veritatis et qui. Perspiciatis illo vel. Non molestiae temporibus. Enim et corporis. Aliquam mollitia magnam. Sunt debitis voluptatum. Eos quia voluptatem. Recusandae ea quod."], ["note", "Nostrum tenetur."], ["created_at", "2019-03-31 09:37:19.660917"], ["updated_at", "2019-03-31 09:37:19.660917"]]
+  [1m[35m (51.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClauseMaster Create (2.0ms)[0m  [1m[32mINSERT INTO "clause_masters" ("name", "content", "note", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Est deleniti aut aut optio."], ["content", "Earum placeat qui. Autem quas et. Natus nesciunt pariatur. Facere voluptatum ducimus. Ratione omnis ab. Quasi architecto voluptatem. Quia deleniti et. Pariatur autem iure. Ut enim commodi. Vero qui hic."], ["note", "Quaerat natus."], ["created_at", "2019-03-31 09:37:19.718938"], ["updated_at", "2019-03-31 09:37:19.718938"]]
+  [1m[35m (68.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClauseMaster Create (2.0ms)[0m  [1m[32mINSERT INTO "clause_masters" ("name", "content", "note", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Deserunt et ad totam omnis."], ["content", "Temporibus repellat voluptatem. Rerum autem doloremque. Sint tempore expedita. Dolor quasi sed. Sint nostrum neque. Eveniet sed enim. Esse eius dignissimos. Qui atque earum. Amet doloremque rem. Reiciendis architecto et."], ["note", "Rerum recusandae."], ["created_at", "2019-03-31 09:37:19.794532"], ["updated_at", "2019-03-31 09:37:19.794532"]]
+  [1m[35m (75.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClauseMaster Create (2.0ms)[0m  [1m[32mINSERT INTO "clause_masters" ("name", "content", "note", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Similique eligendi cumque porro placeat."], ["content", "Non quibusdam minima. Recusandae aliquam odit. Magni dolores delectus. Impedit sint quis. Non neque sit. Et itaque nemo. Maiores eos illum. Omnis beatae vel. Consectetur quo fugit. Sunt repellat cupiditate."], ["note", "Et sit."], ["created_at", "2019-03-31 09:37:19.877020"], ["updated_at", "2019-03-31 09:37:19.877020"]]
+  [1m[35m (52.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClauseMaster Create (1.9ms)[0m  [1m[32mINSERT INTO "clause_masters" ("name", "content", "note", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Officia ut ut velit a."], ["content", "Ducimus unde ea. Reiciendis autem animi. Qui nisi voluptatem. Quia fugit fuga. Voluptatem nihil ut. Facilis asperiores molestias. Repudiandae animi ut. Sequi voluptas alias. Sint impedit tempora. Ipsum excepturi perspiciatis."], ["note", "Eius excepturi."], ["created_at", "2019-03-31 09:37:19.935887"], ["updated_at", "2019-03-31 09:37:19.935887"]]
+  [1m[35m (59.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClauseMaster Create (1.9ms)[0m  [1m[32mINSERT INTO "clause_masters" ("name", "content", "note", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Exercitationem nulla quia rerum quia."], ["content", "Cupiditate quia facere. Assumenda voluptas tempore. Ut et iure. Nesciunt est quia. Recusandae vitae eos. Libero rerum voluptas. Eius harum rerum. Est aut expedita. In culpa quia. Labore enim quis."], ["note", "Commodi labore."], ["created_at", "2019-03-31 09:37:20.001973"], ["updated_at", "2019-03-31 09:37:20.001973"]]
+  [1m[35m (69.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClauseMaster Create (2.2ms)[0m  [1m[32mINSERT INTO "clause_masters" ("name", "content", "note", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Enim necessitatibus et ea vitae."], ["content", "Atque aut optio. Delectus consequatur ut. Rerum tenetur nam. Rerum et ratione. Beatae nihil deserunt. Eveniet non amet. Cupiditate distinctio a. Autem sed id. Pariatur tempora asperiores. Rerum saepe sit."], ["note", "Autem et."], ["created_at", "2019-03-31 09:37:20.078235"], ["updated_at", "2019-03-31 09:37:20.078235"]]
+  [1m[35m (66.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClauseMaster Create (1.4ms)[0m  [1m[32mINSERT INTO "clause_masters" ("name", "content", "note", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Libero quos sed velit maiores."], ["content", "Consequuntur dolorem assumenda. Voluptate ut quia. Id sunt et. Molestiae rerum nemo. Sit vitae quasi. Aut omnis magni. Neque id sit. Repellendus nam veritatis. Nobis voluptate non. Provident et optio."], ["note", "Minima et."], ["created_at", "2019-03-31 09:37:20.150907"], ["updated_at", "2019-03-31 09:37:20.150907"]]
+  [1m[35m (70.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClauseMaster Create (1.5ms)[0m  [1m[32mINSERT INTO "clause_masters" ("name", "content", "note", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Aut et voluptatem quisquam facere."], ["content", "Recusandae repudiandae cumque. Praesentium consectetur et. Id est nesciunt. Eum cumque quos. Ut libero voluptatem. Consequatur necessitatibus iste. Et optio ut. Ducimus totam sed. Similique animi quia. Ut commodi fuga."], ["note", "Ea quasi."], ["created_at", "2019-03-31 09:37:20.226433"], ["updated_at", "2019-03-31 09:37:20.226433"]]
+  [1m[35m (69.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClauseMaster Create (1.1ms)[0m  [1m[32mINSERT INTO "clause_masters" ("name", "content", "note", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ea ad fugit qui nisi."], ["content", "Fuga et soluta. Possimus dolores nesciunt. Veniam eum facilis. Numquam fugit hic. Rem beatae voluptatem. Et possimus quas. Error assumenda voluptate. Eum omnis recusandae. Quas sit quia. Voluptatum atque velit."], ["note", "Reprehenderit labore."], ["created_at", "2019-03-31 09:37:20.300249"], ["updated_at", "2019-03-31 09:37:20.300249"]]
+  [1m[35m (71.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClauseMaster Create (2.1ms)[0m  [1m[32mINSERT INTO "clause_masters" ("name", "content", "note", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Et laboriosam nisi quae mollitia."], ["content", "Sequi incidunt minima. Sed beatae quia. Vitae id temporibus. Nihil eaque corrupti. Earum omnis sed. Quia pariatur non. Expedita optio est. Rerum labore repudiandae. Incidunt voluptatem odit. Eum a nesciunt."], ["note", "Velit et."], ["created_at", "2019-03-31 09:37:20.377410"], ["updated_at", "2019-03-31 09:37:20.377410"]]
+  [1m[35m (67.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClauseMaster Create (2.1ms)[0m  [1m[32mINSERT INTO "clause_masters" ("name", "content", "note", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nam dolorem id pariatur fugiat."], ["content", "Inventore veritatis totam. Laudantium adipisci in. Expedita doloribus officiis. Dolores maxime eligendi. Qui natus facere. Qui mollitia saepe. Neque tempora veniam. Illum eum corrupti. Qui ratione aliquid. Est eos cumque."], ["note", "Temporibus necessitatibus."], ["created_at", "2019-03-31 09:37:20.452147"], ["updated_at", "2019-03-31 09:37:20.452147"]]
+  [1m[35m (68.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClauseMaster Create (1.9ms)[0m  [1m[32mINSERT INTO "clause_masters" ("name", "content", "note", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Quam dolores harum sint pariatur."], ["content", "Atque nihil blanditiis. Sit est quia. Delectus quo quisquam. Dolore illum pariatur. Aut similique reprehenderit. Dolorem quisquam molestias. Sed laborum voluptatum. Ipsa quo quaerat. Debitis exercitationem aut. Deserunt voluptatibus sit."], ["note", "Hic recusandae."], ["created_at", "2019-03-31 09:37:20.527231"], ["updated_at", "2019-03-31 09:37:20.527231"]]
+  [1m[35m (68.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClauseMaster Create (2.2ms)[0m  [1m[32mINSERT INTO "clause_masters" ("name", "content", "note", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Tenetur quod mollitia odit dolores."], ["content", "Adipisci quis molestiae. Quae autem eum. Aspernatur voluptatem officiis. Harum rerum aut. Quaerat deleniti est. Nobis illum mollitia. Autem veritatis assumenda. Sit et aspernatur. Minus quo at. Rerum at qui."], ["note", "Veritatis illo."], ["created_at", "2019-03-31 09:37:20.602754"], ["updated_at", "2019-03-31 09:37:20.602754"]]
+  [1m[35m (59.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClauseMaster Create (1.9ms)[0m  [1m[32mINSERT INTO "clause_masters" ("name", "content", "note", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Molestiae cupiditate harum qui excepturi."], ["content", "Aperiam ut distinctio. Voluptatibus perspiciatis et. Aut vero soluta. Et voluptas qui. Voluptatem sint non. Libero sed eligendi. Fugiat iusto expedita. Pariatur nesciunt explicabo. Qui accusantium repudiandae. Autem tempore commodi."], ["note", "Esse fuga."], ["created_at", "2019-03-31 09:37:20.669202"], ["updated_at", "2019-03-31 09:37:20.669202"]]
+  [1m[35m (59.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClauseMaster Create (1.9ms)[0m  [1m[32mINSERT INTO "clause_masters" ("name", "content", "note", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Cumque ducimus tempora vero velit."], ["content", "Est a alias. Quo mollitia in. Dignissimos quia ducimus. Odio qui delectus. Eligendi delectus maxime. Natus ab quis. Aut quos ab. Consectetur placeat molestias. Odio quae velit. Perspiciatis at aliquam."], ["note", "Voluptate quas."], ["created_at", "2019-03-31 09:37:20.735163"], ["updated_at", "2019-03-31 09:37:20.735163"]]
+  [1m[35m (60.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "clause_masters"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (135.9ms)[0m  [1m[35mCREATE TABLE "clause_masters" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "content" varchar, "note" varchar, "status" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (80.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (79.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190331033158)[0m
+  [1m[35m (57.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-03-31 09:37:44.357705"], ["updated_at", "2019-03-31 09:37:44.357705"]]
+  [1m[35m (82.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (1.8ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2019-03-31 09:37:44.461514"], ["key", "environment"]]
+  [1m[35m (75.8ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/clause_masters" for ::1 at 2019-03-31 19:38:00 +1000
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  Rendered clause_masters/index.html.erb within layouts/application (18.6ms)
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The @clause_masters variable appears to be empty. Did you forget to pass the collection object for will_paginate?):
+    1: <p id="notice"><%= notice %></p>
+    2: 
+    3: <% link_to "Add new", new_clause_master_path %>
+    4: <%= will_paginate %>
+    5: 
+    6: <table>
+    7:   <thead>
+  
+app/views/clause_masters/index.html.erb:4:in `_app_views_clause_masters_index_html_erb__1044184573_68637480'
+Started GET "/" for ::1 at 2019-03-31 19:38:16 +1000
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_topnavbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1215ms (Views: 1190.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clause_masters" for ::1 at 2019-03-31 19:38:24 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  Rendered clause_masters/index.html.erb within layouts/application (25.9ms)
+Completed 500 Internal Server Error in 128ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The @clause_masters variable appears to be empty. Did you forget to pass the collection object for will_paginate?):
+    1: <p id="notice"><%= notice %></p>
+    2: 
+    3: <% link_to "Add new", new_clause_master_path %>
+    4: <%= will_paginate %>
+    5: 
+    6: <table>
+    7:   <thead>
+  
+app/views/clause_masters/index.html.erb:4:in `_app_views_clause_masters_index_html_erb__1044184573_93642380'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "clause_masters"[0m
+Started GET "/clause_masters" for ::1 at 2019-03-31 19:40:46 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  Rendered clause_masters/index.html.erb within layouts/application (15.0ms)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    18:   </thead>
+    19: 
+    20:   <tbody>
+    21:     <% @clause_masters.each do |clause_master| %>
+    22:       <tr>
+    23:         <td><%= clause_master.id %></td>
+    24:         <td><%= clause_master.name %></td>
+  
+app/views/clause_masters/index.html.erb:21:in `_app_views_clause_masters_index_html_erb__1044184573_69462820'
+Started GET "/clause_masters" for ::1 at 2019-03-31 19:41:35 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  Rendered clause_masters/index.html.erb within layouts/application (18.9ms)
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1)):
+    1: <p id="notice"><%= notice %></p>
+    2: 
+    3: <% link_to "Add new", new_clause_master_path %>
+    4: <%= will_paginate %>
+    5: 
+    6: <table>
+    7:   <thead>
+  
+app/views/clause_masters/index.html.erb:4:in `_app_views_clause_masters_index_html_erb__1044184573_103901440'
+Started GET "/clause_masters" for ::1 at 2019-03-31 19:42:20 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  [1m[36mClauseMaster Load (0.6ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  Rendered clause_masters/index.html.erb within layouts/application (280.7ms)
+Completed 500 Internal Server Error in 367ms (ActiveRecord: 2.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `duplicate_clause_master_path' for #<#<Class:0x000000000c62c9e0>:0x000000000a93ed10>):
+    24:         <td><%= clause_master.name %></td>
+    25:         <td><%= clause_master.note %></td>
+    26:         <td><%= clause_master.status %></td>
+    27:         <td><%= link_to 'Duplicate', duplicate_clause_master_path(clause_master) %></td>
+    28:         <td><%= link_to 'Edit', edit_clause_master_path(clause_master) %></td>
+    29:       </tr>
+    30:     <% end %>
+  
+app/views/clause_masters/index.html.erb:27:in `block in _app_views_clause_masters_index_html_erb__1044184573_88744340'
+app/views/clause_masters/index.html.erb:21:in `_app_views_clause_masters_index_html_erb__1044184573_88744340'
+Started GET "/clause_masters" for ::1 at 2019-03-31 19:43:04 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  [1m[36mClauseMaster Load (0.3ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  Rendered clause_masters/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_topnavbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 285ms (Views: 271.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/clause_masters" for ::1 at 2019-03-31 19:44:00 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  Rendered clause_masters/index.html.erb within layouts/application (15.4ms)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1)):
+    1: <p id="notice"><%= notice %></p>
+    2: 
+    3: <% link_to "Add new", new_clause_master_path %>
+    4: <%= will_paginate %>
+    5: 
+    6: <table>
+    7:   <thead>
+  
+app/views/clause_masters/index.html.erb:4:in `_app_views_clause_masters_index_html_erb__1044184573_90588620'
+Started GET "/clause_masters" for ::1 at 2019-03-31 19:48:51 +1000
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  Rendered clause_masters/index.html.erb within layouts/application (22.4ms)
+Completed 500 Internal Server Error in 98ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1)):
+    1: <p id="notice"><%= notice %></p>
+    2: 
+    3: <% link_to "Add new", new_clause_master_path %>
+    4: <%= will_paginate %>
+    5: 
+    6: <table>
+    7:   <thead>
+  
+app/views/clause_masters/index.html.erb:4:in `_app_views_clause_masters_index_html_erb__35555121_68303240'
+Started GET "/clause_masters" for ::1 at 2019-03-31 19:50:27 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  [1m[36mClauseMaster Load (0.8ms)[0m  [1m[34mSELECT "clause_masters".* FROM "clause_masters"[0m
+  Rendered clause_masters/index.html.erb within layouts/application (21.6ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_topnavbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 852ms (Views: 824.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/clause_masters/1/edit" for ::1 at 2019-03-31 19:50:37 +1000
+Processing by ClauseMastersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClauseMaster Load (0.4ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering clause_masters/edit.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (6413.5ms)
+  Rendered clause_masters/edit.html.erb within layouts/application (6434.4ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_topnavbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 6832ms (Views: 6793.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/clause_masters" for ::1 at 2019-03-31 19:54:19 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  [1m[36mClauseMaster Load (0.7ms)[0m  [1m[34mSELECT "clause_masters".* FROM "clause_masters"[0m
+  Rendered clause_masters/index.html.erb within layouts/application (18.9ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_topnavbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 339ms (Views: 319.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/clause_masters" for ::1 at 2019-03-31 19:56:26 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  [1m[36mClauseMaster Load (0.3ms)[0m  [1m[34mSELECT "clause_masters".* FROM "clause_masters"[0m
+  Rendered clause_masters/index.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_topnavbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 368ms (Views: 351.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/clause_masters/1/edit" for ::1 at 2019-03-31 20:28:16 +1000
+Processing by ClauseMastersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClauseMaster Load (0.2ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering clause_masters/edit.html.erb within layouts/application
+  Rendered clause_masters/edit.html.erb within layouts/application (115.4ms)
+Completed 500 Internal Server Error in 152ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `clause_master' for #<#<Class:0x000000000be72448>:0x000000000d6f67f8>
+Did you mean?  clause_master_url):
+    1: 
+    2: <%= link_to "Delete", clause_master(@clause_master), method: :delete, data: { confirm: "Are you sure" } %>
+    3: 
+    4: <%= render 'form', clause_master: @clause_master %>
+  
+app/views/clause_masters/edit.html.erb:2:in `_app_views_clause_masters_edit_html_erb__512265804_112703700'
+Started GET "/clause_masters/1/edit" for ::1 at 2019-03-31 20:30:16 +1000
+Processing by ClauseMastersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClauseMaster Load (0.1ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering clause_masters/edit.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (270.7ms)
+  Rendered clause_masters/edit.html.erb within layouts/application (279.7ms)
+Completed 500 Internal Server Error in 315ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x000000000be72448>:0x000000000c4e25a8>):
+    12:   <% end %>
+    13: 
+    14:   <div class="field">
+    15:     <%= f.label :clauseID %><br />
+    16:     <%= f.text_field :id, disable %>
+    17:   </div>
+    18: 
+  
+app/views/clause_masters/_form.html.erb:15:in `block in _app_views_clause_masters__form_html_erb__203235306_103390620'
+app/views/clause_masters/_form.html.erb:1:in `_app_views_clause_masters__form_html_erb__203235306_103390620'
+app/views/clause_masters/edit.html.erb:4:in `_app_views_clause_masters_edit_html_erb__512265804_103226280'
+Started GET "/clause_masters/1/edit" for ::1 at 2019-03-31 20:30:48 +1000
+Processing by ClauseMastersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClauseMaster Load (0.1ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering clause_masters/edit.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (217.0ms)
+  Rendered clause_masters/edit.html.erb within layouts/application (225.7ms)
+Completed 500 Internal Server Error in 260ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `disable' for #<#<Class:0x000000000be72448>:0x000000000c9db488>):
+    13: 
+    14:   <div class="field">
+    15:     <%= form.label :clauseID %><br />
+    16:     <%= form.text_field :id, disable %>
+    17:   </div>
+    18: 
+    19:   <div class="field">
+  
+app/views/clause_masters/_form.html.erb:16:in `block in _app_views_clause_masters__form_html_erb__203235306_105748820'
+app/views/clause_masters/_form.html.erb:1:in `_app_views_clause_masters__form_html_erb__203235306_105748820'
+app/views/clause_masters/edit.html.erb:4:in `_app_views_clause_masters_edit_html_erb__512265804_105841380'
+Started GET "/clause_masters/1/edit" for ::1 at 2019-03-31 20:34:43 +1000
+Processing by ClauseMastersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClauseMaster Load (0.2ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering clause_masters/edit.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (10.8ms)
+  Rendered clause_masters/edit.html.erb within layouts/application (20.2ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `merge' for :disable:Symbol):
+    13: 
+    14:   <div class="field">
+    15:     <%= form.label :clauseID %><br />
+    16:     <%= form.text_field :id, :disable %>
+    17:   </div>
+    18: 
+    19:   <div class="field">
+  
+app/views/clause_masters/_form.html.erb:16:in `block in _app_views_clause_masters__form_html_erb__203235306_94167900'
+app/views/clause_masters/_form.html.erb:1:in `_app_views_clause_masters__form_html_erb__203235306_94167900'
+app/views/clause_masters/edit.html.erb:4:in `_app_views_clause_masters_edit_html_erb__512265804_120315680'
+Started GET "/clause_masters/1/edit" for ::1 at 2019-03-31 20:35:12 +1000
+Processing by ClauseMastersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClauseMaster Load (0.1ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering clause_masters/edit.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (5.7ms)
+  Rendered clause_masters/edit.html.erb within layouts/application (14.9ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 206ms (Views: 195.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/clause_masters/1/edit" for ::1 at 2019-03-31 20:36:11 +1000
+Processing by ClauseMastersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClauseMaster Load (0.1ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering clause_masters/edit.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (1.4ms)
+  Rendered clause_masters/edit.html.erb within layouts/application (10.2ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 177ms (Views: 165.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/clause_masters/1/edit" for ::1 at 2019-03-31 20:42:50 +1000
+Processing by ClauseMastersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClauseMaster Load (0.2ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering clause_masters/edit.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (1.7ms)
+  Rendered clause_masters/edit.html.erb within layouts/application (10.9ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 177ms (Views: 166.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clause_masters/1/edit" for ::1 at 2019-03-31 20:46:30 +1000
+Processing by ClauseMastersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClauseMaster Load (0.1ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering clause_masters/edit.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (2.0ms)
+  Rendered clause_masters/edit.html.erb within layouts/application (11.4ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 182ms (Views: 170.7ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/clause_masters/1" for ::1 at 2019-03-31 20:46:34 +1000
+Processing by ClauseMastersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4rxGefePOElvbkoPzsKvZLwwr4NEJ6Hoe6ITPY4tijzWhtJ7JsekfWiN09emaTG6nWjV53/urKxSyPPMKp5i3w==", "clause_master"=>{"name"=>"Error iusto quo recusandae cum.", "content"=>"Magnam magni nihil. Dolorem a sit. Consequatur voluptates officiis. Qui qui fugiat. Omnis iusto aut. Eveniet fugiat nostrum. Consequatur at rem. Quidem dolorem voluptatum. Quibusdam dolorem amet. Ea omnis a.", "note"=>"Sunt autem."}, "save"=>"Save", "id"=>"1"}
+  [1m[36mClauseMaster Load (0.1ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameters: :utf8, :_method, :authenticity_token, :clause_master, :save, :id
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/clause_masters
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/clause_masters" for ::1 at 2019-03-31 20:46:34 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  [1m[36mClauseMaster Load (0.3ms)[0m  [1m[34mSELECT "clause_masters".* FROM "clause_masters"[0m
+  Rendered clause_masters/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 173ms (Views: 164.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/clause_masters/1/edit" for ::1 at 2019-03-31 20:46:38 +1000
+Processing by ClauseMastersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClauseMaster Load (0.1ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering clause_masters/edit.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (1.6ms)
+  Rendered clause_masters/edit.html.erb within layouts/application (10.5ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 185ms (Views: 173.1ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/clause_masters/1" for ::1 at 2019-03-31 20:46:39 +1000
+Processing by ClauseMastersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nSP4X3c5F3RrmGCJpgR9EBsacWmNONJcJsnAszhnkBupGWxdpnGLQGx7+VHOr+POOkILDbbx3xgPoyBCnNR4+A==", "clause_master"=>{"name"=>"Error iusto quo recusandae cum.", "content"=>"Magnam magni nihil. Dolorem a sit. Consequatur voluptates officiis. Qui qui fugiat. Omnis iusto aut. Eveniet fugiat nostrum. Consequatur at rem. Quidem dolorem voluptatum. Quibusdam dolorem amet. Ea omnis a.", "note"=>"Sunt autem."}, "history"=>"History", "id"=>"1"}
+  [1m[36mClauseMaster Load (0.1ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameters: :utf8, :_method, :authenticity_token, :clause_master, :history, :id
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/clause_masters
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/clause_masters" for ::1 at 2019-03-31 20:46:39 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  [1m[36mClauseMaster Load (0.2ms)[0m  [1m[34mSELECT "clause_masters".* FROM "clause_masters"[0m
+  Rendered clause_masters/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 170ms (Views: 161.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clause_masters" for ::1 at 2019-03-31 20:48:54 +1000
+  
+ActionController::RoutingError (undefined method `before_filter' for ClauseMastersController:Class
+Did you mean?  before_action):
+  
+app/controllers/clause_masters_controller.rb:6:in `<class:ClauseMastersController>'
+app/controllers/clause_masters_controller.rb:1:in `<top (required)>'
+Started GET "/clause_masters" for ::1 at 2019-03-31 20:49:17 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  [1m[36mClauseMaster Load (0.3ms)[0m  [1m[34mSELECT "clause_masters".* FROM "clause_masters"[0m
+  Rendered clause_masters/index.html.erb within layouts/application (8.6ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 178ms (Views: 164.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/clause_masters/1/edit" for ::1 at 2019-03-31 20:49:19 +1000
+Processing by ClauseMastersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClauseMaster Load (0.2ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering clause_masters/edit.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (1.8ms)
+  Rendered clause_masters/edit.html.erb within layouts/application (10.7ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 185ms (Views: 174.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clause_masters/1/edit" for ::1 at 2019-03-31 20:49:40 +1000
+Processing by ClauseMastersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClauseMaster Load (0.1ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering clause_masters/edit.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (1.7ms)
+  Rendered clause_masters/edit.html.erb within layouts/application (10.6ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 178ms (Views: 167.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/clause_masters/1/edit" for ::1 at 2019-03-31 20:51:35 +1000
+Processing by ClauseMastersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClauseMaster Load (0.1ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering clause_masters/edit.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (1.8ms)
+  Rendered clause_masters/edit.html.erb within layouts/application (10.9ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 196ms (Views: 178.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/clause_masters/1/edit" for ::1 at 2019-03-31 20:52:35 +1000
+Processing by ClauseMastersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClauseMaster Load (0.1ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering clause_masters/edit.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (1.5ms)
+  Rendered clause_masters/edit.html.erb within layouts/application (10.3ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 182ms (Views: 170.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/clause_masters/1/edit" for ::1 at 2019-03-31 20:56:52 +1000
+Processing by ClauseMastersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClauseMaster Load (0.1ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering clause_masters/edit.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (2.2ms)
+  Rendered clause_masters/edit.html.erb within layouts/application (11.4ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 38961ms (Views: 210.6ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/clause_masters/1" for ::1 at 2019-03-31 20:57:34 +1000
+Processing by ClauseMastersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FxkkU9zxEzPADUpC1vGE/vZqcmejrx28aHSk3IBnyUcjI7BRDbmPB8fu05q+Whog1zIIA5hmEPhBHkQtJNQhpA==", "clause_master"=>{"name"=>"Error iusto quo recusandae cum.", "content"=>"Magnam magni nihil. Dolorem a sit. Consequatur voluptates officiis. Qui qui fugiat. Omnis iusto aut. Eveniet fugiat nostrum. Consequatur at rem. Quidem dolorem voluptatum. Quibusdam dolorem amet. Ea omnis a.", "note"=>"Sunt autem."}, "cancel"=>"Cancel", "id"=>"1"}
+  [1m[36mClauseMaster Load (0.2ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameters: :utf8, :_method, :authenticity_token, :clause_master, :cancel, :id
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/clause_masters
+Completed 302 Found in 39099ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/clause_masters" for ::1 at 2019-03-31 20:58:13 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  [1m[36mClauseMaster Load (0.3ms)[0m  [1m[34mSELECT "clause_masters".* FROM "clause_masters"[0m
+  Rendered clause_masters/index.html.erb within layouts/application (9.7ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 2770ms (Views: 168.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/clause_masters/1/edit" for ::1 at 2019-03-31 20:59:10 +1000
+Processing by ClauseMastersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClauseMaster Load (0.1ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering clause_masters/edit.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (1.9ms)
+  Rendered clause_masters/edit.html.erb within layouts/application (10.7ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 185ms (Views: 167.2ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/clause_masters/1" for ::1 at 2019-03-31 20:59:13 +1000
+Processing by ClauseMastersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0DNGpcPMOQkjBPwgo51asEVFdkLap2KujbB6ThDPQaTkCdKnEoSlPSTnZfjLNsRuZB0MJuFub+qk2pq/tHypRw==", "clause_master"=>{"name"=>"Error iusto quo recusandae cum.", "content"=>"Magnam magni nihil. Dolorem a sit. Consequatur voluptates officiis. Qui qui fugiat. Omnis iusto aut. Eveniet fugiat nostrum. Consequatur at rem. Quidem dolorem voluptatum. Quibusdam dolorem amet. Ea omnis a.", "note"=>"Sunt autem."}, "cancel"=>"Cancel", "id"=>"1"}
+  [1m[36mClauseMaster Load (0.1ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/clause_masters
+Filter chain halted as :redirect_cancel rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/clause_masters" for ::1 at 2019-03-31 20:59:13 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  [1m[36mClauseMaster Load (0.2ms)[0m  [1m[34mSELECT "clause_masters".* FROM "clause_masters"[0m
+  Rendered clause_masters/index.html.erb within layouts/application (9.8ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 181ms (Views: 171.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clause_masters/1/edit" for ::1 at 2019-03-31 20:59:15 +1000
+Processing by ClauseMastersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClauseMaster Load (0.1ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering clause_masters/edit.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (2.6ms)
+  Rendered clause_masters/edit.html.erb within layouts/application (12.8ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 215ms (Views: 203.8ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/clause_masters/1" for ::1 at 2019-03-31 20:59:16 +1000
+Processing by ClauseMastersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CNTyKjLdZmy+6PR61MJY2/+BdNNGaxLvKze08bvOkko87mYo45X6WLkLbaK8acYF3tkOt32iH6sCXVQAH316qQ==", "clause_master"=>{"name"=>"Error iusto quo recusandae cum.", "content"=>"Magnam magni nihil. Dolorem a sit. Consequatur voluptates officiis. Qui qui fugiat. Omnis iusto aut. Eveniet fugiat nostrum. Consequatur at rem. Quidem dolorem voluptatum. Quibusdam dolorem amet. Ea omnis a.", "note"=>"Sunt autem."}, "commit"=>"Save", "id"=>"1"}
+  [1m[36mClauseMaster Load (0.1ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameters: :utf8, :_method, :authenticity_token, :clause_master, :commit, :id
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/clause_masters
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/clause_masters" for ::1 at 2019-03-31 20:59:16 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  [1m[36mClauseMaster Load (0.2ms)[0m  [1m[34mSELECT "clause_masters".* FROM "clause_masters"[0m
+  Rendered clause_masters/index.html.erb within layouts/application (9.6ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 174ms (Views: 165.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clause_masters/1/edit" for ::1 at 2019-03-31 20:59:17 +1000
+Processing by ClauseMastersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClauseMaster Load (0.1ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering clause_masters/edit.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (1.7ms)
+  Rendered clause_masters/edit.html.erb within layouts/application (10.7ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 179ms (Views: 168.8ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/clause_masters/1" for ::1 at 2019-03-31 20:59:24 +1000
+Processing by ClauseMastersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T7cNEBl/fvReG8qMbm/Sh8IwzfjpqbIZChPpVcK/wbJ7jZkSyDfiwFn4U1QGxExZ42i3nNJgv10jeQmkZgwpUQ==", "clause_master"=>{"name"=>"Error iusto quo recusandae cum. editted", "content"=>"Magnam magni nihil. Dolorem a sit. Consequatur voluptates officiis. Qui qui fugiat. Omnis iusto aut. Eveniet fugiat nostrum. Consequatur at rem. Quidem dolorem voluptatum. Quibusdam dolorem amet. Ea omnis a.", "note"=>"Sunt autem."}, "commit"=>"Save", "id"=>"1"}
+  [1m[36mClauseMaster Load (0.1ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameters: :utf8, :_method, :authenticity_token, :clause_master, :commit, :id
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/clause_masters
+Completed 302 Found in 10ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/clause_masters" for ::1 at 2019-03-31 20:59:24 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  [1m[36mClauseMaster Load (0.2ms)[0m  [1m[34mSELECT "clause_masters".* FROM "clause_masters"[0m
+  Rendered clause_masters/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 167ms (Views: 158.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clause_masters/1/edit" for ::1 at 2019-03-31 21:00:25 +1000
+Processing by ClauseMastersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClauseMaster Load (0.1ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering clause_masters/edit.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (1.7ms)
+  Rendered clause_masters/edit.html.erb within layouts/application (10.6ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 177ms (Views: 166.1ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/clause_masters/1" for ::1 at 2019-03-31 21:00:40 +1000
+Processing by ClauseMastersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9TJL80hRUkRZgnpzvfPN9i/cBfL4Vgaa4artXlCnmkfBCN/xmRnOcF5h46vVWFMoDoR/lsOfC97IwA2v9BRypA==", "clause_master"=>{"name"=>"Error iusto quo recusandae cum.", "content"=>"Magnam magni nihil. Dolorem a sit. Consequatur voluptates officiis. Qui qui fugiat. Omnis iusto aut. Eveniet fugiat nostrum. Consequatur at rem. Quidem dolorem voluptatum. Quibusdam dolorem amet. Ea omnis a.", "note"=>"Sunt autem. editted"}, "commit"=>"Save", "id"=>"1"}
+  [1m[36mClauseMaster Load (0.1ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameters: :utf8, :_method, :authenticity_token, :clause_master, :commit, :id
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/clause_masters
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/clause_masters" for ::1 at 2019-03-31 21:00:40 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  [1m[36mClauseMaster Load (0.2ms)[0m  [1m[34mSELECT "clause_masters".* FROM "clause_masters"[0m
+  Rendered clause_masters/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 168ms (Views: 158.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clause_masters" for ::1 at 2019-03-31 21:01:03 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  [1m[36mClauseMaster Load (0.2ms)[0m  [1m[34mSELECT "clause_masters".* FROM "clause_masters"[0m
+  Rendered clause_masters/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 198ms (Views: 189.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clause_masters/1/edit" for ::1 at 2019-03-31 21:01:15 +1000
+Processing by ClauseMastersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClauseMaster Load (0.1ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering clause_masters/edit.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (2.6ms)
+  Rendered clause_masters/edit.html.erb within layouts/application (11.8ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 196ms (Views: 184.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/clause_masters/new" for ::1 at 2019-03-31 21:01:20 +1000
+Processing by ClauseMastersController#new as HTML
+  Rendering clause_masters/new.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (1.7ms)
+  Rendered clause_masters/new.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 182ms (Views: 172.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/clause_masters" for ::1 at 2019-03-31 21:01:29 +1000
+Processing by ClauseMastersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G56/8dVS0PV+ix5kHgeMRe5xaZk8ObHzpWOLQWgA3dQvpCvzBBpMwXloh7x2rBKbzykT/QfwvLeMCWuwzLM1Nw==", "clause_master"=>{"name"=>"123", "content"=>"123", "note"=>"123"}, "commit"=>"Save"}
+Unpermitted parameters: :utf8, :authenticity_token, :clause_master, :commit
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering clause_masters/new.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (2.7ms)
+  Rendered clause_masters/new.html.erb within layouts/application (11.9ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 172ms (Views: 168.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/clause_masters" for ::1 at 2019-03-31 21:08:04 +1000
+Processing by ClauseMastersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G56/8dVS0PV+ix5kHgeMRe5xaZk8ObHzpWOLQWgA3dQvpCvzBBpMwXloh7x2rBKbzykT/QfwvLeMCWuwzLM1Nw==", "clause_master"=>{"name"=>"123", "content"=>"123", "note"=>"123"}, "commit"=>"Save"}
+Unpermitted parameters: :utf8, :authenticity_token, :clause_master, :commit
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Started POST "/clause_masters" for ::1 at 2019-03-31 21:08:26 +1000
+Started POST "/clause_masters" for ::1 at 2019-03-31 21:08:26 +1000
+Started POST "/clause_masters" for ::1 at 2019-03-31 21:08:26 +1000
+  Rendering clause_masters/new.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (2.3ms)
+  Rendered clause_masters/new.html.erb within layouts/application (11.2ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 22121ms (Views: 189.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/clause_masters" for ::1 at 2019-03-31 21:08:26 +1000
+Started POST "/clause_masters" for ::1 at 2019-03-31 21:08:26 +1000
+Processing by ClauseMastersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZjM/xDubWKZ/ozt0wZ1dANzLPVSpWcM5lCKMlDL6pPZSCavG6tPEknhAoqypNsPe/ZNHMJKQzn29SGxllklMFQ==", "clause_master"=>{"name"=>"123", "content"=>"456", "note"=>"789"}, "commit"=>"Save"}
+Processing by ClauseMastersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZjM/xDubWKZ/ozt0wZ1dANzLPVSpWcM5lCKMlDL6pPZSCavG6tPEknhAoqypNsPe/ZNHMJKQzn29SGxllklMFQ==", "clause_master"=>{"name"=>"123", "content"=>"456", "note"=>"789"}, "commit"=>"Save"}
+Processing by ClauseMastersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZjM/xDubWKZ/ozt0wZ1dANzLPVSpWcM5lCKMlDL6pPZSCavG6tPEknhAoqypNsPe/ZNHMJKQzn29SGxllklMFQ==", "clause_master"=>{"name"=>"123", "content"=>"456", "note"=>"789"}, "commit"=>"Save"}
+Processing by ClauseMastersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZjM/xDubWKZ/ozt0wZ1dANzLPVSpWcM5lCKMlDL6pPZSCavG6tPEknhAoqypNsPe/ZNHMJKQzn29SGxllklMFQ==", "clause_master"=>{"name"=>"123", "content"=>"456", "note"=>"789"}, "commit"=>"Save"}
+Processing by ClauseMastersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZjM/xDubWKZ/ozt0wZ1dANzLPVSpWcM5lCKMlDL6pPZSCavG6tPEknhAoqypNsPe/ZNHMJKQzn29SGxllklMFQ==", "clause_master"=>{"name"=>"123", "content"=>"456", "note"=>"789"}, "commit"=>"Save"}
+Unpermitted parameters: :utf8, :authenticity_token, :clause_master, :commit
+Unpermitted parameters: :utf8, :authenticity_token, :clause_master, :commit
+Unpermitted parameters: :utf8, :authenticity_token, :clause_master, :commit
+Unpermitted parameters: :utf8, :authenticity_token, :clause_master, :commit
+Unpermitted parameters: :utf8, :authenticity_token, :clause_master, :commit
+Unpermitted parameters: :utf8, :authenticity_token, :clause_master, :commit
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering clause_masters/new.html.erb within layouts/application
+  Rendering clause_masters/new.html.erb within layouts/application
+  Rendering clause_masters/new.html.erb within layouts/application
+  Rendering clause_masters/new.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (2.2ms)
+  Rendered clause_masters/new.html.erb within layouts/application (58.7ms)
+  Rendered clause_masters/_form.html.erb (1.8ms)
+  Rendered clause_masters/new.html.erb within layouts/application (27.4ms)
+  Rendering clause_masters/new.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (2.3ms)
+  Rendered clause_masters/new.html.erb within layouts/application (27.0ms)
+  Rendered clause_masters/_form.html.erb (1.9ms)
+  Rendered clause_masters/new.html.erb within layouts/application (12.7ms)
+  Rendered clause_masters/_form.html.erb (1.7ms)
+  Rendered clause_masters/new.html.erb within layouts/application (73.0ms)
+Completed 500 Internal Server Error in 82570ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (can't add a new key into hash during iteration):
+     7:     <title>INSPINIA</title>
+     8: 
+     9:     <!-- Main css styles -->
+    10:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    11: 
+    12:     <!-- Main javascript files -->
+    13:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__757352848_102827540'
+app/controllers/clause_masters_controller.rb:29:in `block (2 levels) in create'
+app/controllers/clause_masters_controller.rb:24:in `create'
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 82979ms (Views: 767.7ms | ActiveRecord: 0.1ms)
+
+
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 83553ms (Views: 1274.2ms | ActiveRecord: 0.1ms)
+
+
+  Rendered layouts/_navigation.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+  Rendered layouts/_topnavbar.html.erb (0.1ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 84638ms (Views: 2331.8ms | ActiveRecord: 0.1ms)
+
+
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 84639ms (Views: 2415.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/clause_masters" for ::1 at 2019-03-31 21:10:01 +1000
+Processing by ClauseMastersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNpBpj+X2ma+/go7nk1vL9nz4oyh+8q41tavh741hcio4NWk7t9GUrkdk+P25vHx+KuY6Joyx/z/vE92GoZtKw==", "clause_master"=>{"name"=>"123", "content"=>"4546", "note"=>"45646456"}, "commit"=>"Save"}
+Unpermitted parameters: :utf8, :authenticity_token, :clause_master, :commit
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering clause_masters/new.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (2.3ms)
+  Rendered clause_masters/new.html.erb within layouts/application (11.9ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 69366ms (Views: 183.3ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/clause_masters" for ::1 at 2019-03-31 21:11:20 +1000
+Processing by ClauseMastersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a2LAKXfqgXErcnexT6gaKbOf4ni69MJmQ4zhSQIwrZhfWFQrpqIdRSyR7mknA4T3kseYHIE9zyJq5gG4poNFew==", "clause_master"=>{"name"=>"qwe", "content"=>"qweqwe", "note"=>"qeqeqeqeqweqw"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering clause_masters/new.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (2.3ms)
+  Rendered clause_masters/new.html.erb within layouts/application (11.3ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 721126ms (Views: 171.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/clause_masters" for ::1 at 2019-03-31 21:44:22 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  [1m[36mClauseMaster Load (0.2ms)[0m  [1m[34mSELECT "clause_masters".* FROM "clause_masters"[0m
+  Rendered clause_masters/index.html.erb within layouts/application (14.3ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 495ms (Views: 480.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/clause_masters/new" for ::1 at 2019-03-31 21:44:26 +1000
+Processing by ClauseMastersController#new as HTML
+  Rendering clause_masters/new.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (2470.3ms)
+  Rendered clause_masters/new.html.erb within layouts/application (2479.3ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 2647ms (Views: 2638.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/clause_masters" for ::1 at 2019-03-31 21:44:36 +1000
+Processing by ClauseMastersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o9IU4wIylH5EhMLHPMAzEQEqzfMsuaVa1r1JSxS2tNiX6IDh03oISkNnWx9Ua63PIHK3lxdwqB7/16m6sAVcOw==", "clause_master"=>{"name"=>"123", "content"=>"456", "note"=>"789"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering clause_masters/new.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (3.0ms)
+  Rendered clause_masters/new.html.erb within layouts/application (12.3ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 47465ms (Views: 184.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/clause_masters" for ::1 at 2019-03-31 21:45:46 +1000
+Processing by ClauseMastersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LWsb3gQeq82zJ5EyhS2m2msB39AP1jTx07o1Avvu06MZUY/c1VY3+bTECOrthjgESlmltDQfObX60NXzX107QA==", "clause_master"=>{"name"=>"123", "content"=>"123", "note"=>"789"}, "commit"=>"Save"}
+Unpermitted parameters: :utf8, :authenticity_token, :clause_master, :commit
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering clause_masters/new.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (2.3ms)
+  Rendered clause_masters/new.html.erb within layouts/application (11.3ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 177ms (Views: 165.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/clause_masters" for ::1 at 2019-03-31 21:46:16 +1000
+Processing by ClauseMastersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iBTxSCjemZLz+vtjadZ01pHylAFRX+1r4AvxZu2DiJq8LmVK+ZYFpvQZYrsBfeoIsKruZWqW4C/JYRGXSTBgeQ==", "clause_master"=>{"name"=>"123", "content"=>"456", "note"=>"789"}, "commit"=>"Save"}
+Unpermitted parameters: :utf8, :authenticity_token, :clause_master, :commit
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering clause_masters/new.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (2.3ms)
+  Rendered clause_masters/new.html.erb within layouts/application (12.0ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 53046ms (Views: 186.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/clause_masters" for ::1 at 2019-03-31 22:11:03 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  [1m[36mClauseMaster Load (0.2ms)[0m  [1m[34mSELECT "clause_masters".* FROM "clause_masters"[0m
+  Rendered clause_masters/index.html.erb within layouts/application (14.2ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 489ms (Views: 474.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/clause_masters/new" for ::1 at 2019-03-31 22:11:08 +1000
+Processing by ClauseMastersController#new as HTML
+  Rendering clause_masters/new.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (2481.8ms)
+  Rendered clause_masters/new.html.erb within layouts/application (2490.6ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 2656ms (Views: 2647.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/clause_masters" for ::1 at 2019-03-31 22:11:20 +1000
+Processing by ClauseMastersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eSMvDmsMks/OOsMIRs25N3IjCVlZF2m8omomA9yjWnZNGbsMukQO+8nZWtAuZifpU3tzPWLeZPiLAMbyeBCylQ==", "clause_master"=>{"name"=>"123", "content"=>"12312", "note"=>"123123123"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClauseMaster Create (0.7ms)[0m  [1m[32mINSERT INTO "clause_masters" ("name", "content", "note", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "123"], ["content", "12312"], ["note", "123123123"], ["created_at", "2019-03-31 12:11:45.401925"], ["updated_at", "2019-03-31 12:11:45.401925"]]
+  [1m[35m (56.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/clause_masters
+Completed 302 Found in 24696ms (ActiveRecord: 56.9ms)
+
+
+Started GET "/clause_masters" for ::1 at 2019-03-31 22:11:45 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  [1m[36mClauseMaster Load (0.2ms)[0m  [1m[34mSELECT "clause_masters".* FROM "clause_masters"[0m
+  Rendered clause_masters/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 170ms (Views: 161.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clause_masters/1/edit" for ::1 at 2019-03-31 22:12:34 +1000
+Processing by ClauseMastersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClauseMaster Load (0.2ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering clause_masters/edit.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (2.0ms)
+  Rendered clause_masters/edit.html.erb within layouts/application (11.6ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 229ms (Views: 206.1ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/clause_masters/1" for ::1 at 2019-03-31 22:12:38 +1000
+Processing by ClauseMastersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7Z7xWd2TuIHPzCnwY4HFLkv1uPxruzmZY5Q1Rd2fq/zZpGVbDNsktcgvsCgLKlvwaq3CmFByNN1K/tW0eSxDHw==", "clause_master"=>{"name"=>"Error iusto quo recusandae cum. editted", "content"=>"Magnam magni nihil. Dolorem a sit. Consequatur voluptates officiis. Qui qui fugiat. Omnis iusto aut. Eveniet fugiat nostrum. Consequatur at rem. Quidem dolorem voluptatum. Quibusdam dolorem amet. Ea omnis a.", "note"=>"Sunt autem."}, "commit"=>"Save", "id"=>"1"}
+  [1m[36mClauseMaster Load (0.1ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClauseMaster Update (0.9ms)[0m  [1m[33mUPDATE "clause_masters" SET "name" = ?, "updated_at" = ? WHERE "clause_masters"."id" = ?[0m  [["name", "Error iusto quo recusandae cum. editted"], ["updated_at", "2019-03-31 12:12:38.341977"], ["id", 1]]
+  [1m[35m (83.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/clause_masters
+Completed 302 Found in 96ms (ActiveRecord: 84.2ms)
+
+
+Started GET "/clause_masters" for ::1 at 2019-03-31 22:12:38 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  [1m[36mClauseMaster Load (0.3ms)[0m  [1m[34mSELECT "clause_masters".* FROM "clause_masters"[0m
+  Rendered clause_masters/index.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 174ms (Views: 164.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/clause_masters" for ::1 at 2019-03-31 22:24:09 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  [1m[36mClauseMaster Load (0.3ms)[0m  [1m[34mSELECT "clause_masters".* FROM "clause_masters"[0m
+  Rendered clause_masters/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 173ms (Views: 163.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/clause_masters/1/edit" for ::1 at 2019-03-31 22:24:11 +1000
+Processing by ClauseMastersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClauseMaster Load (0.2ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering clause_masters/edit.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (1.7ms)
+  Rendered clause_masters/edit.html.erb within layouts/application (10.6ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 177ms (Views: 166.4ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/clause_masters/1" for ::1 at 2019-03-31 22:24:14 +1000
+Processing by ClauseMastersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v8+RxYSf7/1kHmnfr0zxUkiyafcB/Lpt7YIeprtRxGSL9QXHVddzyWP98AfH52+MaeoTkzo1tynE6P5XH+Ishw==", "clause_master"=>{"name"=>"Error iusto quo recusandae cum. editted", "content"=>"Magnam magni nihil. Dolorem a sit. Consequatur voluptates officiis. Qui qui fugiat. Omnis iusto aut. Eveniet fugiat nostrum. Consequatur at rem. Quidem dolorem voluptatum. Quibusdam dolorem amet. Ea omnis a.", "note"=>"Sunt autem."}, "cancel"=>"Cancel", "id"=>"1"}
+  [1m[36mClauseMaster Load (0.1ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/clause_masters
+Filter chain halted as :redirect_cancel rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/clause_masters" for ::1 at 2019-03-31 22:24:15 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  [1m[36mClauseMaster Load (0.2ms)[0m  [1m[34mSELECT "clause_masters".* FROM "clause_masters"[0m
+  Rendered clause_masters/index.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 207ms (Views: 197.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clause_masters/1/edit" for ::1 at 2019-03-31 22:24:16 +1000
+Processing by ClauseMastersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClauseMaster Load (0.1ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering clause_masters/edit.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (1.7ms)
+  Rendered clause_masters/edit.html.erb within layouts/application (10.8ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 182ms (Views: 171.1ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/clause_masters/1" for ::1 at 2019-03-31 22:24:17 +1000
+Processing by ClauseMastersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RYSUGdQsbwDIKgn2wV1bAGkhRM+DCAmkWWrHkQK0ZqZxvgAbBWTzNM/JkC6p9sXeSHk+q7jBBOBwACdgpgeORQ==", "clause_master"=>{"name"=>"Error iusto quo recusandae cum. editted", "content"=>"Magnam magni nihil. Dolorem a sit. Consequatur voluptates officiis. Qui qui fugiat. Omnis iusto aut. Eveniet fugiat nostrum. Consequatur at rem. Quidem dolorem voluptatum. Quibusdam dolorem amet. Ea omnis a.", "note"=>"Sunt autem."}, "history"=>"History", "id"=>"1"}
+  [1m[36mClauseMaster Load (0.1ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/clause_masters
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/clause_masters" for ::1 at 2019-03-31 22:24:17 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  [1m[36mClauseMaster Load (0.2ms)[0m  [1m[34mSELECT "clause_masters".* FROM "clause_masters"[0m
+  Rendered clause_masters/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 168ms (Views: 158.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clause_masters/1/edit" for ::1 at 2019-03-31 22:24:29 +1000
+Processing by ClauseMastersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClauseMaster Load (0.1ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering clause_masters/edit.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (1.7ms)
+  Rendered clause_masters/edit.html.erb within layouts/application (10.6ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 197ms (Views: 185.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/clause_masters/1" for ::1 at 2019-03-31 22:24:33 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/clause_masters/1"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/clause_masters/1" for ::1 at 2019-03-31 22:24:37 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/clause_masters/1"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/clause_masters" for ::1 at 2019-03-31 22:25:24 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  [1m[36mClauseMaster Load (0.2ms)[0m  [1m[34mSELECT "clause_masters".* FROM "clause_masters"[0m
+  Rendered clause_masters/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 175ms (Views: 165.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clause_masters/1/edit" for ::1 at 2019-03-31 22:25:26 +1000
+Processing by ClauseMastersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClauseMaster Load (0.1ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering clause_masters/edit.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (1.6ms)
+  Rendered clause_masters/edit.html.erb within layouts/application (10.5ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 177ms (Views: 166.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/clause_masters/1" for ::1 at 2019-03-31 22:25:28 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/clause_masters/1"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/clause_masters/1" for ::1 at 2019-03-31 22:26:17 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/clause_masters/1"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/clause_masters/1" for ::1 at 2019-03-31 22:27:13 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/clause_masters/1"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/clause_masters" for ::1 at 2019-03-31 22:27:17 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  [1m[36mClauseMaster Load (0.3ms)[0m  [1m[34mSELECT "clause_masters".* FROM "clause_masters"[0m
+  Rendered clause_masters/index.html.erb within layouts/application (9.2ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 175ms (Views: 162.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/clause_masters" for ::1 at 2019-03-31 22:27:21 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  [1m[36mClauseMaster Load (0.2ms)[0m  [1m[34mSELECT "clause_masters".* FROM "clause_masters"[0m
+  Rendered clause_masters/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 170ms (Views: 161.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clause_masters/1/edit" for ::1 at 2019-03-31 22:27:26 +1000
+Processing by ClauseMastersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClauseMaster Load (0.2ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering clause_masters/edit.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (1.9ms)
+  Rendered clause_masters/edit.html.erb within layouts/application (10.7ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 174ms (Views: 163.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clause_masters/1" for ::1 at 2019-03-31 22:27:29 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/clause_masters/1"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/clause_masters/1" for ::1 at 2019-03-31 22:28:23 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/clause_masters/1"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/clause_masters" for ::1 at 2019-03-31 22:28:33 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  [1m[36mClauseMaster Load (0.3ms)[0m  [1m[34mSELECT "clause_masters".* FROM "clause_masters"[0m
+  Rendered clause_masters/index.html.erb within layouts/application (9.2ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 182ms (Views: 169.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/clause_masters/1/edit" for ::1 at 2019-03-31 22:28:34 +1000
+Processing by ClauseMastersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClauseMaster Load (0.2ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering clause_masters/edit.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (2.0ms)
+  Rendered clause_masters/edit.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 175ms (Views: 163.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clause_masters/1" for ::1 at 2019-03-31 22:28:36 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/clause_masters/1"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/clause_masters" for ::1 at 2019-03-31 22:30:24 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  [1m[36mClauseMaster Load (0.3ms)[0m  [1m[34mSELECT "clause_masters".* FROM "clause_masters"[0m
+  Rendered clause_masters/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 176ms (Views: 166.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/clause_masters/1/edit" for ::1 at 2019-03-31 22:30:32 +1000
+Processing by ClauseMastersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClauseMaster Load (0.1ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering clause_masters/edit.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (1.7ms)
+  Rendered clause_masters/edit.html.erb within layouts/application (10.9ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 176ms (Views: 166.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/clause_masters/1" for ::1 at 2019-03-31 22:30:33 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/clause_masters/1"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/clause_masters" for ::1 at 2019-03-31 22:30:45 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  [1m[36mClauseMaster Load (0.2ms)[0m  [1m[34mSELECT "clause_masters".* FROM "clause_masters"[0m
+  Rendered clause_masters/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 170ms (Views: 161.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clause_masters/11/edit" for ::1 at 2019-03-31 22:30:47 +1000
+Processing by ClauseMastersController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mClauseMaster Load (0.1ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering clause_masters/edit.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (1.7ms)
+  Rendered clause_masters/edit.html.erb within layouts/application (10.8ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 175ms (Views: 164.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/clause_masters/11" for ::1 at 2019-03-31 22:30:52 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/clause_masters/11"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/clause_masters" for ::1 at 2019-03-31 22:32:18 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  [1m[36mClauseMaster Load (0.3ms)[0m  [1m[34mSELECT "clause_masters".* FROM "clause_masters"[0m
+  Rendered clause_masters/index.html.erb within layouts/application (9.5ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 183ms (Views: 170.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/clause_masters/1/edit" for ::1 at 2019-03-31 22:32:31 +1000
+Processing by ClauseMastersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClauseMaster Load (0.2ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering clause_masters/edit.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (1.8ms)
+  Rendered clause_masters/edit.html.erb within layouts/application (11.1ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 173ms (Views: 162.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clause_masters/1" for ::1 at 2019-03-31 22:32:47 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/clause_masters/1"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/clause_masters" for ::1 at 2019-03-31 22:38:02 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  [1m[36mClauseMaster Load (0.2ms)[0m  [1m[34mSELECT "clause_masters".* FROM "clause_masters"[0m
+  Rendered clause_masters/index.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 180ms (Views: 170.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clause_masters/1/edit" for ::1 at 2019-03-31 22:38:07 +1000
+Processing by ClauseMastersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClauseMaster Load (0.1ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering clause_masters/edit.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (1.8ms)
+  Rendered clause_masters/edit.html.erb within layouts/application (10.9ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 170ms (Views: 159.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/clause_masters/1" for ::1 at 2019-03-31 22:38:09 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/clause_masters/1"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/clause_masters/1" for ::1 at 2019-03-31 22:38:29 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/clause_masters/1"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/clause_masters/1" for ::1 at 2019-03-31 22:42:58 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/clause_masters/1"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/clause_masters" for ::1 at 2019-03-31 22:43:01 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  [1m[36mClauseMaster Load (0.2ms)[0m  [1m[34mSELECT "clause_masters".* FROM "clause_masters"[0m
+  Rendered clause_masters/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 179ms (Views: 170.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clause_masters/1/edit" for ::1 at 2019-03-31 22:43:07 +1000
+Processing by ClauseMastersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClauseMaster Load (0.1ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering clause_masters/edit.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (1.7ms)
+  Rendered clause_masters/edit.html.erb within layouts/application (10.8ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 176ms (Views: 166.0ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/clause_masters/1" for ::1 at 2019-03-31 22:43:08 +1000
+Processing by ClauseMastersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"hNw+8eqDX+EZd9z2wD9uLlFQuYGomvCYJHIEllsucwqw5qrzO8vD1R6URS6olPDwcAjD5ZNT/dwNGORn/52b6Q==", "id"=>"1"}
+  [1m[36mClauseMaster Load (0.1ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClauseMaster Destroy (0.8ms)[0m  [1m[31mDELETE FROM "clause_masters" WHERE "clause_masters"."id" = ?[0m  [["id", 1]]
+  [1m[35m (84.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/clause_masters
+Completed 302 Found in 94ms (ActiveRecord: 85.1ms)
+
+
+Started GET "/clause_masters" for ::1 at 2019-03-31 22:43:08 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  [1m[36mClauseMaster Load (0.2ms)[0m  [1m[34mSELECT "clause_masters".* FROM "clause_masters"[0m
+  Rendered clause_masters/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 173ms (Views: 163.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clause_masters/2/edit" for ::1 at 2019-04-01 00:11:49 +1000
+Processing by ClauseMastersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mClauseMaster Load (0.2ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering clause_masters/edit.html.erb within layouts/application
+  Rendered clause_masters/_form.html.erb (1.9ms)
+  Rendered clause_masters/edit.html.erb within layouts/application (11.5ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 186ms (Views: 174.9ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/clause_masters/2" for ::1 at 2019-04-01 00:11:55 +1000
+Processing by ClauseMastersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"jjJ9GXwlHqk6kfp0+gezihAXpHLm/nrUxsdXF0/dqQG6COkbrW2CnT1yY6ySrC1UMU/eFt03d5Dvrbfm625B4g==", "id"=>"2"}
+  [1m[36mClauseMaster Load (0.1ms)[0m  [1m[34mSELECT  "clause_masters".* FROM "clause_masters" WHERE "clause_masters"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mClauseMaster Destroy (0.8ms)[0m  [1m[31mDELETE FROM "clause_masters" WHERE "clause_masters"."id" = ?[0m  [["id", 2]]
+  [1m[35m (91.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/clause_masters
+Completed 302 Found in 88209ms (ActiveRecord: 92.1ms)
+
+
+Started GET "/clause_masters" for ::1 at 2019-04-01 00:13:23 +1000
+Processing by ClauseMastersController#index as HTML
+  Rendering clause_masters/index.html.erb within layouts/application
+  [1m[36mClauseMaster Load (0.3ms)[0m  [1m[34mSELECT "clause_masters".* FROM "clause_masters"[0m
+  Rendered clause_masters/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 171ms (Views: 161.2ms | ActiveRecord: 0.3ms)
+
+

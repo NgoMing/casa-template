@@ -1,5 +1,9 @@
 class ClauseMastersController < ApplicationController
+
+  add_breadcrumb 'Clause Master', :clause_masters_path
+
   before_action :set_clause_master, only: [:edit, :update, :destroy]
+  before_action :redirect_cancel
 
   def index
     @clause_masters = ClauseMaster.all
@@ -9,7 +13,9 @@ class ClauseMastersController < ApplicationController
     @clause_master = ClauseMaster.new
   end
 
-  def edit; end
+  def edit
+    add_breadcrumb 'Edit', :edit_clause_master_path
+  end
 
   def create
     @clause_master = ClauseMaster.new(clause_master_params)
@@ -40,7 +46,7 @@ class ClauseMastersController < ApplicationController
   def destroy
     @clause_master.destroy
     respond_to do |format|
-      format.html { redirect_to clause_masters_url, notice: 'Clause master was successfully destroyed.' }
+      format.html { redirect_to clause_masters_path, notice: 'Clause master was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -52,6 +58,13 @@ class ClauseMastersController < ApplicationController
   end
 
   def clause_master_params
-    params.permit(:name, :content, :note, :status)
+    params.require(:clause_master).permit(:name, :content, :note, :status)
   end
+
+  def redirect_cancel
+    if params[:cancel] == "Cancel"
+      redirect_to clause_masters_path
+    end
+  end
+
 end

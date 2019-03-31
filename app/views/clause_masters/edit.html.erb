@@ -1,6 +1,6 @@
-<h1>Editing Clause Master</h1>
+
+<%= button_to "Delete", @clause_master,
+                      method: :delete,
+                      data: { confirm: "Are you sure" } %>
 
 <%= render 'form', clause_master: @clause_master %>
-
-<%= link_to 'Show', @clause_master %> |
-<%= link_to 'Back', clause_masters_path %>
