@@ -25,6 +25,13 @@
 
 ## Deployment
 
+## Guide for development
+### Create Clause Master
+* Generate scaffold: 
+`rails g scaffold ClauseMaster`
+* Declare attributes for ClauseMaster model in db/migrate
+
+
 ## Gems
 ### Testing
 * gem:

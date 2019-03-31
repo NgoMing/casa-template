@@ -1,0 +1,17 @@
+<%= form_with(model: clause_master, local: true) do |form| %>
+  <% if clause_master.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(clause_master.errors.count, "error") %> prohibited this clause_master from being saved:</h2>
+
+      <ul>
+      <% clause_master.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
