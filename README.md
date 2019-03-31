@@ -35,12 +35,15 @@
 `rails parallel_test`
 * Clean code:
 `rails clean_code`
+* Test logic controller
 
 ## Gems
 ### Testing
 * gem:
   + Create fake data: `gem 'faker'`
-  + RSpec testing tool: `gem 'rspec-rails', '~> 3.5'`
+  + RSpec testing tool: 
+    - `gem 'rspec-rails', '~> 3.5'`
+    - `gem 'rails-controller-testing'`
   + Support fixtures: `gem 'factory_bot_rails', '~> 4.0'`
   + Support match methods: `gem 'shoulda-matchers', '~> 3.1'`
   + Clean database: `gem 'database_cleaner'`

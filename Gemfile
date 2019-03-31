@@ -23,7 +23,8 @@ group :development, :test do
   gem 'sqlite3', git: 'https://github.com/larskanis/sqlite3-ruby', branch: 'add-gemspec'
 
   gem 'faker'
-  gem 'rspec-rails', '~> 3.5'
+  gem 'rspec-rails', '~> 3.8'
+  gem 'rails-controller-testing'
   gem 'parallel_tests'
   gem 'simplecov'
 end

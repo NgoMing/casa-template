@@ -1,5 +1,5 @@
 Myapp::Application.routes.draw do
-  resources :clause_masters
+  resources :clause_masters, except: [:show]
   get "home/index"
   get "home/minor"
   # The priority is based upon order of creation: first created -> highest priority.
