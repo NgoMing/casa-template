@@ -30,6 +30,7 @@
 * Generate scaffold: 
 `rails g scaffold ClauseMaster`
 * Declare attributes for ClauseMaster model in db/migrate
+* Test validate model
 
 
 ## Gems

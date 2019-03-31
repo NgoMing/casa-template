@@ -17,7 +17,6 @@ gem 'jbuilder', '~> 2.6'
 gem 'traceroute'
 gem 'rubocop', '~> 0.66.0', require: false
 gem 'rails_best_practices', '~> 1.15', '>= 1.15.7'
-gem 'simplecov', require: false, group: :test
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -26,6 +25,7 @@ group :development, :test do
   gem 'faker'
   gem 'rspec-rails', '~> 3.5'
   gem 'parallel_tests'
+  gem 'simplecov'
 end
 
 group :production do

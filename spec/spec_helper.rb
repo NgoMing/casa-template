@@ -1,6 +1,5 @@
 require 'simplecov'
-SimpleCov.formatter = SimpleCov::Formatter::Console
-SimpleCov.start
+SimpleCov.start 'rails'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
