@@ -36,6 +36,7 @@
 * Clean code:
 `rails clean_code`
 * Test logic controller
+* Write front end: buttons, forms, ...
 
 ## Gems
 ### Testing
